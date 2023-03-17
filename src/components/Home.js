@@ -1,14 +1,27 @@
 import React from 'react'
+import Note from './Note';
+import AddNote from './AddNote'
 
 
-function Home(props) {
-    return (
-        <div>
-            This is Home Section
-        </div>
-    )
+
+export const Home = () => {
+
+
+  return (
+    <>
+
+      <div className='conatiner'>
+        <AddNote />
+      </div>
+      <div className='conatiner'>
+
+
+        <Note />
+      </div>
+    </>
+  )
 }
 
-Home.propTypes = {}
+
 
 export default Home;
